@@ -1,3 +1,11 @@
 # lwc-training
 
-> Recreate an Aura Lightning Training app using Lightning Web Components.
+> Refactoring an Aura Component app to Lightning Web Components.
+
+## Dev, Build and Test
+
+## Resources
+
+## Description of Files and Directories
+
+## Issues
