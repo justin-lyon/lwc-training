@@ -3,6 +3,12 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/accountCard": [
+                "accountCard/accountCard.js"
+            ],
+            "c/accountGrid": [
+                "accountGrid/accountGrid.js"
+            ],
             "c/homeAccountApp": [
                 "homeAccountApp/homeAccountApp.js"
             ]

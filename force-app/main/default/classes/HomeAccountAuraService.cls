@@ -3,7 +3,7 @@ public with sharing class HomeAccountAuraService {
   public static AccountDAI AccountDI { get; set {
     accountAccessor = value; }}
 
-  @AuraEnabled
+  @AuraEnabled(cacheable=true)
   public static List<Account> getLimittedAccounts(Integer limitter) {
     limitter = Integer.valueOf(limitter);
     List<Account> accounts = new List<Account>();
