@@ -1,3 +1,26 @@
 <template>
-    <lightning-card title={account.Name}></lightning-card>
+    <lightning-card
+      title={account.Name}
+      icon-name="standard:account" >
+
+        <div slot="actions">
+          <lightning-button-icon
+            onclick={clickAccount}
+            icon-name="utility:open"
+            size="small"></lightning-button-icon>
+        </div>
+
+        <div class="slds-p-horizontal_small" >
+
+          <div>{account.BillingAddress.street}</div>
+          <div>{account.BillingAddress.state}</div>
+          <div>{account.BillingAddress.country}</div>
+        </div>
+
+        <div slot="footer">
+          <div>
+            {account.Owner.Name}
+          </div>
+        </div>
+    </lightning-card>
 </template>

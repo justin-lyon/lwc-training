@@ -4,7 +4,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>limitter</name>
-                <value>10</value>
+                <value>9</value>
             </componentInstanceProperties>
             <componentName>homeAccountApp</componentName>
         </componentInstances>

@@ -1,5 +1,10 @@
 <template>
-    <div>
-      <c-account-grid accounts={accounts}></c-account-grid>
+    <div class="c-container" onaccountclick={gotoAccount}>
+      <template if:true={accounts}>
+        <c-account-grid accounts={accounts}></c-account-grid>
+      </template>
+      <template if:false={accounts}>
+        Loading...
+      </template>
     </div>
 </template>
