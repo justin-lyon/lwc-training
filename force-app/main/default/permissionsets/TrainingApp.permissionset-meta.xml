@@ -6,4 +6,8 @@
     </applicationVisibilities>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Training App</label>
+    <tabSettings>
+        <tab>Home</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
