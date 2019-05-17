@@ -1,5 +1,8 @@
 <template>
-    <div class="c-container" onnavaccount={gotoAccount}>
+    <div class="c-container"
+      onnavaccount={gotoAccount}
+      onselectaccount={selectAccount} >
+
       <template if:true={accounts}>
         <c-account-grid accounts={accounts}></c-account-grid>
       </template>
