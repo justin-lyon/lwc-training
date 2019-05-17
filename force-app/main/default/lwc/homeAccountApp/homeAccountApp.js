@@ -15,7 +15,6 @@ export default class HomeAccountApp extends NavigationMixin(LightningElement) {
 
   gotoAccount(event) {
     event.stopPropagation()
-
     this[NavigationMixin.Navigate]({
       type: 'standard__recordPage',
       attributes: {

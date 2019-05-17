@@ -5,12 +5,12 @@
 
         <div slot="actions">
           <lightning-button-icon
-            onclick={clickAccount}
+            onclick={gotoAccount}
             icon-name="utility:open"
             size="small"></lightning-button-icon>
         </div>
 
-        <div class="slds-p-horizontal_small" >
+        <div class="slds-p-horizontal_small clickable" onclick={selectAccount} >
 
           <div>{account.BillingAddress.street}</div>
           <div>{account.BillingAddress.state}</div>

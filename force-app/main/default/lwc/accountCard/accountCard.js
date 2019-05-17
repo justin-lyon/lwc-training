@@ -3,11 +3,19 @@ import { LightningElement, api } from 'lwc';
 export default class AccountCard extends LightningElement {
   @api account
 
-  clickAccount() {
-    const selectEvent = new CustomEvent('accountclick', {
+  gotoAccount() {
+    this.dispatchClick('navaccount', this.account.Id)
+  }
+
+  selectAccount() {
+    this.dispatchClick('selectaccount', this.account.Id)
+  }
+
+  dispatchClick(name, id) {
+    const event = new CustomEvent(name.toLowerCase(), {
       bubbles: true,
-      detail: this.account.Id
+      detail: id
     })
-    this.dispatchEvent(selectEvent)
+    this.dispatchEvent(event)
   }
 }
