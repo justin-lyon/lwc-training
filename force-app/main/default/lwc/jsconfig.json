@@ -11,6 +11,9 @@
             ],
             "c/homeAccountApp": [
                 "homeAccountApp/homeAccountApp.js"
+            ],
+            "c/relatedContactsApp": [
+                "relatedContactsApp/relatedContactsApp.js"
             ]
         }
     },
