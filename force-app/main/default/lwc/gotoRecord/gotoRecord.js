@@ -5,7 +5,6 @@ export default class GotoRecord extends LightningElement {
   @api recordId
 
   gotoRecord() {
-    console.log(this.name, this.recordId)
     const event = new CustomEvent(this.name.toLowerCase(), {
       bubbles: true,
       detail: this.recordId
