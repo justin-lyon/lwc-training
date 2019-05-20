@@ -1,12 +1,12 @@
 <template>
-  <div class="slds-grid">
-    Related Contacts
-    <template for:item="con" for:each={contacts} >
-
-      <div class="slds-col" key={con.Id} >
-        {con.Name}
-      </div>
-
-    </template>
-  </div>
+  <template if:true={contacts}>
+    <c-contact-table
+      contacts={contacts}></c-contact-table>
+  </template>
+  <template if:false={contacts} >
+    Loading...
+  </template>
+  <template if:true={error} >
+    {error.message}
+  </template>
 </template>

@@ -5,6 +5,7 @@ public with sharing class RelatedContactsAuraService {
 
   @AuraEnabled(cacheable=true)
   public static List<Contact> getContactsByAccount(Id accountId) {
+    System.debug('accountId' + accountId);
     List<Contact> found = new List<Contact>();
     try {
       found = contactAccessor.queryByAccount(accountId);

@@ -1,5 +1,5 @@
 {
   "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": false,
-  "eslint.nodePath": "c:\\Users\\justin.lyon\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-45.15.0\\node_modules",
+  "eslint.nodePath": "c:\\Users\\justin.lyon\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-45.15.1\\node_modules",
   "salesforcedx-vscode-core.show-cli-success-msg": false
 }

@@ -9,14 +9,20 @@
             "c/accountGrid": [
                 "accountGrid/accountGrid.js"
             ],
+            "c/contactRow": [
+                "contactRow/contactRow.js"
+            ],
+            "c/contactTable": [
+                "contactTable/contactTable.js"
+            ],
             "c/homeAccountApp": [
                 "homeAccountApp/homeAccountApp.js"
             ],
-            "c/relatedContactsApp": [
-                "relatedContactsApp/relatedContactsApp.js"
-            ],
             "c/pubsub": [
                 "pubsub/pubsub.js"
+            ],
+            "c/relatedContactsApp": [
+                "relatedContactsApp/relatedContactsApp.js"
             ]
         }
     },

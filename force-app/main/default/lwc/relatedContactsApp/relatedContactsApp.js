@@ -1,20 +1,22 @@
-import { LightningElement, api, wire } from 'lwc';
+import { CurrentPageReference } from 'lightning/navigation'
+import { LightningElement, api, track, wire } from 'lwc';
 import getContactsByAccount from '@salesforce/apex/RelatedContactsAuraService.getContactsByAccount'
 import { registerListener, unregisterListener } from 'c/pubsub'
 
 export default class RelatedContactsApp extends LightningElement {
-  @api accountId
+  @track accountId
   @api contacts
   @api error
 
   @wire(getContactsByAccount, { accountId: '$accountId' })
-  handleGetContacts(error, data) {
+  handleGetContacts({error, data}) {
     if(data) {
       this.contacts = data
-      return
     }
     this.error = error
   }
+
+  @wire(CurrentPageReference) pageRef
 
   connectedCallback() {
     registerListener('selectaccount', this.setAccountId, this)
@@ -25,7 +27,6 @@ export default class RelatedContactsApp extends LightningElement {
   }
 
   setAccountId(accountId) {
-    console.log('setting accountid', accountId)
     this.accountId = accountId
   }
 }
