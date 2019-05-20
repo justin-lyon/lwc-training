@@ -1,10 +1,10 @@
 import { LightningElement, api } from 'lwc';
 
-export default class ContactRow extends LightningElement {
-  @api contact
+export default class AccountDetail extends LightningElement {
+  @api account
 
-  clickContact() {
-    this.dispatchClick('gotoContact', this.contact.Id)
+  selectAccount() {
+    this.dispatchClick('selectaccount', this.account.Id)
   }
 
   dispatchClick(name, id) {

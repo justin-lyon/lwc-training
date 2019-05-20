@@ -7,10 +7,6 @@ export default class AccountCard extends LightningElement {
     this.dispatchClick('navaccount', this.account.Id)
   }
 
-  selectAccount() {
-    this.dispatchClick('selectaccount', this.account.Id)
-  }
-
   dispatchClick(name, id) {
     const event = new CustomEvent(name.toLowerCase(), {
       bubbles: true,

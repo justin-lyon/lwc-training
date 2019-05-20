@@ -1,0 +1,9 @@
+.clickable {
+  cursor: pointer;
+  border: 1px solid #006dcc;
+  border-radius: 0.5rem;
+}
+
+.clickable:hover {
+  box-shadow: 5px 5px 3px 2px #333;
+}

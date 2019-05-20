@@ -1,3 +1,12 @@
 :host {
   display: table-row;
 }
+
+:host:hover {
+  outline: 0;
+  background: #d8edff;
+}
+
+.clickable {
+  cursor: pointer;
+}

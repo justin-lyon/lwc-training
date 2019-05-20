@@ -23,6 +23,9 @@
             ],
             "c/relatedContactsApp": [
                 "relatedContactsApp/relatedContactsApp.js"
+            ],
+            "c/accountDetail": [
+                "accountDetail/accountDetail.js"
             ]
         }
     },
