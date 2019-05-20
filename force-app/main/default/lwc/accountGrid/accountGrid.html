@@ -2,7 +2,9 @@
   <div class="slds-grid slds-wrap slds-gutters">
     <template for:item="acc" for:each={accounts}>
       <div class="slds-col slds-small-size_1-of-3 slds-p-bottom_medium" key={acc.Id}>
-        <c-account-card account={acc}></c-account-card>
+        <c-account-card account={acc}>
+          <c-account-detail account={acc}></c-account-detail>
+        </c-account-card>
       </div>
     </template>
   </div>

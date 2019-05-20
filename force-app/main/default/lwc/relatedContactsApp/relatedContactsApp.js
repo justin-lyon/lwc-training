@@ -1,17 +1,39 @@
 import { NavigationMixin, CurrentPageReference } from 'lightning/navigation'
+import { getRecord } from 'lightning/uiRecordApi'
 import { LightningElement, api, track, wire } from 'lwc';
 import getContactsByAccount from '@salesforce/apex/RelatedContactsAuraService.getContactsByAccount'
 import { registerListener, unregisterListener } from 'c/pubsub'
 
+const FIELDS = [
+  'Account.Id',
+  'Account.Name',
+]
 export default class RelatedContactsApp extends NavigationMixin(LightningElement) {
   @track accountId
+  @api account
   @api contacts
   @api error
+
+  @wire(getRecord, { recordId: '$accountId', fields: FIELDS })
+  handleGetAccount({error, data}) {
+    console.log('handleGetAccount', { data, error })
+    console.log('data', JSON.stringify(data))
+    if(data) {
+      this.account = {
+        Name: data.fields.Name.value,
+        Id: data.fields.Id.value
+      }
+      return
+    }
+    this.account = {}
+    this.error = error
+  }
 
   @wire(getContactsByAccount, { accountId: '$accountId' })
   handleGetContacts({error, data}) {
     if(data) {
       this.contacts = data
+      return
     }
     this.error = error
   }
