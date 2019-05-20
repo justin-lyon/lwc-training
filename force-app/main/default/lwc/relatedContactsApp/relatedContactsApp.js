@@ -16,8 +16,6 @@ export default class RelatedContactsApp extends NavigationMixin(LightningElement
 
   @wire(getRecord, { recordId: '$accountId', fields: FIELDS })
   handleGetAccount({error, data}) {
-    console.log('handleGetAccount', { data, error })
-    console.log('data', JSON.stringify(data))
     if(data) {
       this.account = {
         Name: data.fields.Name.value,

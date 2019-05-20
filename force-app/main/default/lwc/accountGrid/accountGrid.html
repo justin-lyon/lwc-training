@@ -3,7 +3,17 @@
     <template for:item="acc" for:each={accounts}>
       <div class="slds-col slds-small-size_1-of-3 slds-p-bottom_medium" key={acc.Id}>
         <c-account-card account={acc}>
+          <div slot="actions">
+            <c-goto-record
+              name="gotoaccount"
+              record-id={acc.Id}></c-goto-record>
+          </div>
+
           <c-account-detail account={acc}></c-account-detail>
+
+          <div slot="footer">
+            {acc.Owner.Name}
+          </div>
         </c-account-card>
       </div>
     </template>

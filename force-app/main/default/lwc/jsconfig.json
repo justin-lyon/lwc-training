@@ -6,6 +6,9 @@
             "c/accountCard": [
                 "accountCard/accountCard.js"
             ],
+            "c/accountDetail": [
+                "accountDetail/accountDetail.js"
+            ],
             "c/accountGrid": [
                 "accountGrid/accountGrid.js"
             ],
@@ -24,8 +27,8 @@
             "c/relatedContactsApp": [
                 "relatedContactsApp/relatedContactsApp.js"
             ],
-            "c/accountDetail": [
-                "accountDetail/accountDetail.js"
+            "c/gotoRecord": [
+                "gotoRecord/gotoRecord.js"
             ]
         }
     },

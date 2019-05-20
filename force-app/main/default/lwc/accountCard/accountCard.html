@@ -4,10 +4,7 @@
     icon-name="standard:account" >
 
     <div slot="actions">
-      <lightning-button-icon
-        onclick={gotoAccount}
-        icon-name="utility:open"
-        size="small"></lightning-button-icon>
+      <slot name="actions"></slot>
     </div>
 
     <div class="slds-p-horizontal_small" onclick={selectAccount} >
@@ -15,9 +12,7 @@
     </div>
 
     <div slot="footer">
-      <div>
-        {account.Owner.Name}
-      </div>
+      <slot name="footer"></slot>
     </div>
   </lightning-card>
 </template>
