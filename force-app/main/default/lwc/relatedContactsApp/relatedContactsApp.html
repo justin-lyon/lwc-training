@@ -2,8 +2,10 @@
   <template if:true={contacts}>
     <div ongotocontact={gotoContact}>
       <c-account-card account={account}>
-        <c-contact-table
-          contacts={contacts}></c-contact-table>
+        <!-- <c-contact-table
+          contacts={contacts}></c-contact-table> -->
+        <c-contact-list
+          contacts={contacts}></c-contact-list>
 
         <div slot="footer">
           <span class="slds-text-color_weak">Total: {contacts.length}</span>

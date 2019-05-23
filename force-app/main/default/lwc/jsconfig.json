@@ -18,6 +18,9 @@
             "c/contactTable": [
                 "contactTable/contactTable.js"
             ],
+            "c/gotoRecord": [
+                "gotoRecord/gotoRecord.js"
+            ],
             "c/homeAccountApp": [
                 "homeAccountApp/homeAccountApp.js"
             ],
@@ -27,8 +30,11 @@
             "c/relatedContactsApp": [
                 "relatedContactsApp/relatedContactsApp.js"
             ],
-            "c/gotoRecord": [
-                "gotoRecord/gotoRecord.js"
+            "c/contactList": [
+                "contactList/contactList.js"
+            ],
+            "c/contactItem": [
+                "contactItem/contactItem.js"
             ]
         }
     },
