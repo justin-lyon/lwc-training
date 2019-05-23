@@ -1,8 +1,10 @@
 <template>
-  <ul>
+  <ul class="slds-has-dividers_around slds-has-block-links_space">
     <template for:item="contact" for:each={contacts}>
-      <li key={contact.Id}>
-        {contact.Name}
+      <li key={contact.Id}
+        class="slds-item item-hover">
+        <c-contact-item
+          contact={contact}></c-contact-item>
       </li>
     </template>
   </ul>

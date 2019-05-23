@@ -1,3 +1,18 @@
 <template>
-    
+  <div class="slds-p-around_small">
+    <div class="slds-p-left_medium slds-truncate">
+      <div class="slds-grid">
+        <div class="slds-col">
+          <lightning-avatar src={contact.PhotoUrl}></lightning-avatar>
+        </div>
+        <div class="slds-col slds-size_5-of-12">
+          <span class="slds-text-link clickable"
+            onclick={clickContact} >{contact.Name}</span>
+        </div>
+        <div class="slds-col slds-size_6-of-12">
+          {contact.Email}
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
