@@ -5,7 +5,8 @@ const NAME = 'Rick Sanchez'
 const EMAIL = 'rick.sanchez@thecouncil.net'
 const CONTACT = {
   Name: NAME,
-  Email: EMAIL
+  Email: EMAIL,
+  PhotoUrl: undefined
 }
 
 describe('c-contact-item', () => {
