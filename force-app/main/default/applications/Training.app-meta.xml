@@ -11,6 +11,7 @@
     <label>Training</label>
     <navType>Standard</navType>
     <tabs>Home</tabs>
+    <tabs>Hello</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Case</tabs>
     <tabs>standard-Contact</tabs>

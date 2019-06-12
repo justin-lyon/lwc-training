@@ -12,6 +12,12 @@
             "c/accountGrid": [
                 "accountGrid/accountGrid.js"
             ],
+            "c/contactItem": [
+                "contactItem/contactItem.js"
+            ],
+            "c/contactList": [
+                "contactList/contactList.js"
+            ],
             "c/contactRow": [
                 "contactRow/contactRow.js"
             ],
@@ -29,12 +35,6 @@
             ],
             "c/relatedContactsApp": [
                 "relatedContactsApp/relatedContactsApp.js"
-            ],
-            "c/contactList": [
-                "contactList/contactList.js"
-            ],
-            "c/contactItem": [
-                "contactItem/contactItem.js"
             ]
         }
     },
