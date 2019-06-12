@@ -35,6 +35,9 @@
             ],
             "c/relatedContactsApp": [
                 "relatedContactsApp/relatedContactsApp.js"
+            ],
+            "c/helloLwc": [
+                "helloLwc/helloLwc.js"
             ]
         }
     },
