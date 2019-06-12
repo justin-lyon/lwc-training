@@ -2,6 +2,10 @@
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <flexiPageRegions>
         <componentInstances>
+            <componentInstanceProperties>
+                <name>greeting</name>
+                <value>Justin</value>
+            </componentInstanceProperties>
             <componentName>helloLwc</componentName>
         </componentInstances>
         <name>main</name>
